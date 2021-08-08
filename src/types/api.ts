@@ -40,6 +40,13 @@ export type Image = {
   url: string
 }
 
+export type Reviews = {
+  id: number
+  name: string
+  text: string
+  photo: Image
+}
+
 export type LogoProps = {
   alternativeText: string
   url: string
@@ -97,6 +104,11 @@ export type SectionAboutUsProps = {
   authors: Author[]
 }
 
+export type SectionReviewsProps = {
+  title: string
+  reviews: Reviews[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -107,4 +119,5 @@ export type LandingPageProps = {
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
   sectionAboutUs: SectionAboutUsProps
+  sectionReviews: SectionReviewsProps
 }
