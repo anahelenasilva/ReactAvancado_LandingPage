@@ -25,7 +25,7 @@ const ReviewCard: React.FC<Reviews> = ({ id, name, photo, text }) => {
   return (
     <S.Card>
       <S.User>
-        <S.Image src={getImageUrl(photo.url)} alt={photo.alternativeText} />
+        <S.Image src={getImageUrl(photo.url)} alt={name} />
         <S.Name>{name}</S.Name>
       </S.User>
       <S.Text>
